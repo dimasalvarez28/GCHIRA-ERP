@@ -21,7 +21,8 @@ export const ROUTES = [
       { id: 'gastos', label: 'Gastos', icon: iconReceipt() },
       { id: 'pedidos', label: 'Pedidos', icon: iconBox() },
       { id: 'clientes', label: 'Clientes', icon: iconUsers() },
-      { id: 'productos', label: 'Productos', icon: iconTag() }
+      { id: 'productos', label: 'Productos', icon: iconTag() },
+      { id: 'estadoCuenta', label: 'Estados de cuenta', icon: iconReceipt() }
     ]
   }
 ];
