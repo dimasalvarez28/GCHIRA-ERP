@@ -9,7 +9,7 @@
 
 export const CONFIG = {
   // URL de tu Web App de Google Apps Script (termina en /exec)
-  API_URL: 'https://script.google.com/macros/s/AKfycbwerDHuL_EwBTA0yMY13vXS9mo65m3hlXLM1l3JG6M-PVSFBbod7vyqeuKJpn_hTurHBw/exec',
+  API_URL: 'https://script.google.com/macros/s/AKfycbwhZ12DpO9Oaj_6VLUHbXt6kyKowwWjl9U9gIAkoYKSBB_iauFzN8UHx1FDfXJa7nr9RQ/exec',
 
   APP_NAME: 'NovaERP',
   APP_SHORT: 'NX',
