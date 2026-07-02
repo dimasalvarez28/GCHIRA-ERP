@@ -294,3 +294,4 @@ El dashboard simplemente dejará de mostrarla la próxima vez que se actualice (
 
 **¿Necesito dejar la pestaña de Apps Script abierta para que funcione?**
 No. Una vez que hiciste "Implementar" (Paso 2), el backend queda funcionando en los servidores de Google de forma permanente, sin que tengas que dejar nada abierto.
+ 
