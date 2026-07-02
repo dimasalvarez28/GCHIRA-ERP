@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#F3F5FA" />
+<title>NovaERP · Dashboard Empresarial</title>
+<meta name="description" content="Dashboard ERP conectado a Google Sheets: ventas, finanzas, gastos y pedidos." />
+
+<!-- Tipografías -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Estilos del proyecto (orden importa: variables -> base -> componentes) -->
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/components.css" />
+
+<!-- Chart.js: todas las visualizaciones del dashboard -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+
+<!-- Exportación a Excel (SheetJS) -->
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+<!-- Exportación a PDF (jsPDF + autoTable) -->
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+<div class="app-shell" id="appShell">
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar" id="sidebar"></aside>
+
+  <!-- ================= MAIN ================= -->
+  <div class="app-main">
+    <header class="topbar" id="topbar"></header>
+
+    <main class="app-content">
+      <div class="page-header">
+        <div>
+          <h1 class="page-header__title" id="pageTitle">Cargando…</h1>
+          <p class="page-header__subtitle" id="pageSubtitle"></p>
+        </div>
+      </div>
+
+      <div id="pageContent"><!-- Cada dashboard se renderiza aquí (ver js/router.js) --></div>
+    </main>
+  </div>
+</div>
+
+<div class="toast-container"></div>
+
+<!-- Punto de entrada de la aplicación (ES Modules) -->
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

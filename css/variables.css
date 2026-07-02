@@ -1,0 +1,124 @@
+/* ============================================================================
+   DESIGN TOKENS
+   Sistema de variables CSS. Todo el resto de las hojas de estilo consume
+   estos tokens — nunca se deben usar valores "mágicos" sueltos en los
+   componentes, para mantener consistencia y facilitar el theming claro/oscuro.
+============================================================================ */
+
+:root {
+  /* --- Tipografía ------------------------------------------------------- */
+  --font-display: 'Sora', 'Inter', sans-serif;   /* Titulares, cifras KPI */
+  --font-body: 'Inter', sans-serif;               /* Texto general, UI */
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace; /* Datos tabulares */
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.9375rem;
+  --fs-md: 1.0625rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.625rem;
+  --fs-2xl: 2.25rem;
+
+  /* --- Espaciado ---------------------------------------------------------*/
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* --- Radios y bordes ---------------------------------------------------*/
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* --- Layout --------------------------------------------------------- */
+  --sidebar-width: 260px;
+  --sidebar-width-collapsed: 76px;
+  --topbar-height: 68px;
+
+  /* --- Transiciones ----------------------------------------------------*/
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 320ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* --- Marca / acento (constante en ambos temas) ------------------------*/
+  --brand-500: #2F6FED;
+  --brand-600: #1E52C4;
+  --brand-400: #5C8FFF;
+  --brand-100: #E7EFFF;
+
+  --accent-teal: #0EA5A0;
+  --accent-violet: #7C5CFC;
+  --accent-amber: #D97706;
+
+  --success-500: #16A34A;
+  --success-100: #DCFCE7;
+  --warning-500: #D97706;
+  --warning-100: #FEF3C7;
+  --danger-500: #DC2626;
+  --danger-100: #FEE2E2;
+  --info-500: #2F6FED;
+  --info-100: #E7EFFF;
+}
+
+/* ---------------------------------------------------------------------------
+   TEMA CLARO (por defecto)
+--------------------------------------------------------------------------- */
+:root,
+[data-theme='light'] {
+  --bg-app: #F3F5FA;
+  --bg-surface: #FFFFFF;
+  --bg-surface-alt: #F8F9FC;
+  --bg-sidebar: #12172B;
+  --bg-sidebar-hover: #1D2440;
+  --bg-hover: #F1F3F9;
+
+  --text-primary: #101828;
+  --text-secondary: #4B5468;
+  --text-muted: #8992A6;
+  --text-inverse: #FFFFFF;
+  --text-sidebar: #C7CCE0;
+  --text-sidebar-active: #FFFFFF;
+
+  --border-subtle: #E7E9F1;
+  --border-strong: #D3D7E3;
+
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 4px 12px rgba(16, 24, 40, 0.08);
+  --shadow-lg: 0 12px 32px rgba(16, 24, 40, 0.12);
+
+  --chart-grid: #EDEFF5;
+  --scrollbar-thumb: #D3D7E3;
+}
+
+/* ---------------------------------------------------------------------------
+   TEMA OSCURO
+--------------------------------------------------------------------------- */
+[data-theme='dark'] {
+  --bg-app: #0B0E17;
+  --bg-surface: #131826;
+  --bg-surface-alt: #171D2E;
+  --bg-sidebar: #0B0E17;
+  --bg-sidebar-hover: #1A2035;
+  --bg-hover: #1A2035;
+
+  --text-primary: #EDEFF7;
+  --text-secondary: #AEB4C6;
+  --text-muted: #767E97;
+  --text-inverse: #0B0E17;
+  --text-sidebar: #8992AE;
+  --text-sidebar-active: #FFFFFF;
+
+  --border-subtle: #232A3E;
+  --border-strong: #2E3650;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
+
+  --chart-grid: #1E2438;
+  --scrollbar-thumb: #2E3650;
+}
