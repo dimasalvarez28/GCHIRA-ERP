@@ -14,6 +14,11 @@ export const CONFIG = {
   APP_NAME: 'NovaERP',
   APP_SHORT: 'NX',
 
+  // Nombre del negocio que aparece en el encabezado de los Estados de Cuenta
+  // en PDF (Dashboard de Estados de Cuenta). Cámbialo por el nombre real de
+  // tu empresa, ej: 'WAPIN'.
+  COMPANY_NAME: 'WAPIN - GRUPO CHIRA S.A.',
+
   // Refresco automático de datos (ms). 0 = desactivado.
   AUTO_REFRESH_MS: 5 * 60 * 1000,
 

@@ -12,6 +12,7 @@ import { renderGastos } from '../pages/dashboardGastos.js';
 import { renderPedidos } from '../pages/dashboardPedidos.js';
 import { renderClientes } from '../pages/dashboardClientes.js';
 import { renderProductos } from '../pages/dashboardProductos.js';
+import { renderEstadoCuenta } from '../pages/dashboardEstadoCuenta.js';
 
 const PAGES = {
   general: renderGeneral,
@@ -20,7 +21,8 @@ const PAGES = {
   gastos: renderGastos,
   pedidos: renderPedidos,
   clientes: renderClientes,
-  productos: renderProductos
+  productos: renderProductos,
+  estadoCuenta: renderEstadoCuenta
 };
 
 export function initRouter() {
