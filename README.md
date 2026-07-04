@@ -293,5 +293,5 @@ La versión actual es de acceso libre a quien tenga el link. Si necesitas una co
 El dashboard simplemente dejará de mostrarla la próxima vez que se actualice (cada 5 minutos, o al presionar refrescar). Como el dashboard no modifica tu Sheet, no hay riesgo de pérdida de información adicional.
 
 **¿Necesito dejar la pestaña de Apps Script abierta para que funcione?**
-No. Una vez que hiciste "Implementar" (Paso 2), el backend queda funcionando en los servidores de Google de forma permanente, sin que tengas que dejar nada abierto.
+No. Una vez que hiciste "Implementar" (Paso 2), el backend queda funcionando en los servidores de Google de forma permanente, sin que tengas que dejar nada abierto. 
  
